@@ -1,0 +1,53 @@
+{
+    "name": "adorratm/myappointments",
+    "description": "Open Source Web Scheduler",
+    "homepage": "https://mutfakyapim.com",
+    "type": "project",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Adorratm",
+            "email": "emrekilic19983@gmail.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/adorratm/myappointments/issues",
+        "forum": "https://mutfakyapim.com",
+        "wiki": "https://mutfakyapim.com",
+        "source": "https://github.com/adorratm/myappointments"
+    },
+    "keywords": [
+        "calendar",
+        "scheduler",
+        "appointments",
+        "events",
+        "dates",
+        "google",
+        "services"
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "EA\\Engine\\": "engine/"
+        }
+    },
+    "require": {
+        "php": ">=7.3",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "ext-gd": "*",
+        "gregwar/captcha": "^1.1",
+        "phpmailer/phpmailer": "^6.1",
+        "jsvrcek/ics": "^0.8",
+        "monolog/monolog": "^1",
+        "google/apiclient": "^2.0"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master",
+        "phpunit/phpunit": "^9"
+    },
+    "scripts": {
+        "test": "php vendor/bin/phpunit tests"
+    }
+}
